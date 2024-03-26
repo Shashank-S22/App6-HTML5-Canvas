@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Goal is to learn how to use Javascript + HTML + CSS to manipulate pictures, text, and drawing shapes. 
  
 Known Issues:
-blah, blah, blah, blah
+Biggest known issue was adding the image onto the canvas, since we had to figure out a way to define image without actually pasting into the website after the button was clicked. 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -46,24 +46,24 @@ function draw_a() {
 } // full function, when called upon, it will draw the rectangle. 
 
 function draw_b() {
-	var bcanvas = document.getElementById("myCanvas");
-	var bcontext = bcanvas.getContext("2d");
-	bcontext.font = "30px Arial";
-	bcontext.fillText("Shashank", 10, 50);
-}
+	var bcanvas = document.getElementById("myCanvas"); //this line calls for the myCanvas element when bcanvas is run
+	var bcontext = bcanvas.getContext("2d"); //this line calls for the context of the 2D canvas, when bcontext is run
+	bcontext.font = "30px Arial"; //this line fills sets the font to 30 pixels, Arial style
+	bcontext.fillText("Shashank", 10, 50); //this line writes the name out, with the fillText tool
+} // full function, when called upon, will write out the name "Shashank" at 30 pixels, Arial font. 
  function draw_c() { 
-	var img = new Image();
- 	img.src = 'https://i.etsystatic.com/7143651/r/il/1e9505/817912708/il_570xN.817912708_rjbq.jpg'
+	var img = new Image(); //This defines the image as a variable
+ 	img.src = 'https://i.etsystatic.com/7143651/r/il/1e9505/817912708/il_570xN.817912708_rjbq.jpg' //This gives the url for the image for the image to be taken from
   	img.addEventListener('load', function() {
-	var c_canvas= document.getElementById("myCanvas");
-	var c_context = c_canvas.getContext("2d");
-	c_context.drawImage(img, 0, 0);}, false)
- }
+	var c_canvas= document.getElementById("myCanvas"); //This line calls for the myCanvas element when c_canvas is run
+	var c_context = c_canvas.getContext("2d"); //This line calls for the context of the 2D canvas, when c_canvas is run
+	c_context.drawImage(img, 0, 0);}, false) //This line draws the actual image that was defined before. 
+ } //Full function is responsible for generating and uploading an image into the canvas when button is clicked
 function draw_d() {
-	var dcanvas = document.getElementById("myCanvas");
-	var dcontext = dcanvas.getContext("2d");
-	dcanvas.width = dcanvas.width;
-}
+	var dcanvas = document.getElementById("myCanvas"); //This line calls for the myCanvas element when dcanvas is run
+	var dcontext = dcanvas.getContext("2d"); //This line calls for the context of the 2D canvas, when dcontext is run
+	dcanvas.width = dcanvas.width; //This line basically sets the dcanvas to itself, resetting the canvas to what is was originally, therefore effectively clearing the screen. 
+} //Full function is responsible for clearing the screen from the other functions ran before it. 
 </script>
 
 
