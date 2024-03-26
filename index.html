@@ -49,7 +49,7 @@ function draw_b() {
 	var bcanvas = document.getElementById("myCanvas");
 	var bcontext = bcanvas.getContext("2d");
 	bcontext.font = "30px Arial";
-	bcontext.strokeText("Hello World", 10, 50);
+	bcontext.fillText("Hello World", 10, 50);
 }
 
 </script>
@@ -91,13 +91,13 @@ function draw_b() {
 </div>
 
 <div>
-	<a href= "#one" onclick="draw_a()" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--Creating a button that once it is clicked will create a rectangle on the canvas-->
+	<a onclick="draw_a()" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--Creating a button that once it is clicked will create a rectangle on the canvas-->
 	
-	<a href ="two" onclick="draw_b()" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--Creating a button that once it is clicked will create a person's name onto the Canvas-->
+	<a onclick="draw_b()" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--Creating a button that once it is clicked will create a person's name onto the Canvas-->
 
-	<a href ="three" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--Creating a button that once it is clicked will show an image that is displayed on the Canvas-->
+	<a class="w3-btn w3-grey w3-round"> Here is an image </a> <!--Creating a button that once it is clicked will show an image that is displayed on the Canvas-->
 
-	<a href ="four" class="w3-btn w3-grey w3-round"> Clear </a> <!--Creating a button that once it is clicked will fully clear the canvas screen so that nothing can be seen-->
+	<a class="w3-btn w3-grey w3-round"> Clear </a> <!--Creating a button that once it is clicked will fully clear the canvas screen so that nothing can be seen-->
 	
 </div>
 	
