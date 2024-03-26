@@ -59,6 +59,9 @@ function draw_b() {
 	var c_context = c_canvas.getContext("2d");
 	c_context.drawImage(img, 0, 0);}, false)
  }
+function draw_d() {
+	var d_canvas = document.getElementById("myCanvas");
+	d_canvas.width = d_canvas.width
 </script>
 
 
@@ -105,7 +108,7 @@ function draw_b() {
 
 	<a onclick="draw_c()" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--Creating a button that once it is clicked will show an image that is displayed on the Canvas-->
 
-	<a class="w3-btn w3-grey w3-round"> Clear </a> <!--Creating a button that once it is clicked will fully clear the canvas screen so that nothing can be seen-->
+	<a onclick="draw_d()" class="w3-btn w3-grey w3-round"> Clear </a> <!--Creating a button that once it is clicked will fully clear the canvas screen so that nothing can be seen-->
 	
 </div>
 	
