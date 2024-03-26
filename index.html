@@ -51,6 +51,12 @@ function draw_b() {
 	bcontext.font = "30px Arial";
 	bcontext.fillText("Shashank", 10, 50);
 }
+function draw_c() { 
+	var c_canvas= document.getElementById("myCanvas");
+	var c_context = c_canvas.getContext("2d");
+	var img = document.getElementById("src");
+	c_context.drawImage(img, 10, 10);
+</script>
 
 </script>
 
@@ -88,6 +94,7 @@ function draw_b() {
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 	<canvas id = "myCanvas" width="300" height="225" style="border:6px solid #000000"></canvas>	<!-- This creates my canvas with the width at 300 pixels and the height set at 225 pixels. It adds stype element with border of 6 pixel with a solid color-->
+	<img src="migraineimage.jpg" alt="migraine image">
 </div>
 
 <div>
@@ -95,7 +102,7 @@ function draw_b() {
 	
 	<a onclick="draw_b()" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--Creating a button that once it is clicked will create a person's name onto the Canvas-->
 
-	<a class="w3-btn w3-grey w3-round"> Here is an image </a> <!--Creating a button that once it is clicked will show an image that is displayed on the Canvas-->
+	<a onclick="draw_c()" class="w3-btn w3-grey w3-round"> Here is an image </a> <!--Creating a button that once it is clicked will show an image that is displayed on the Canvas-->
 
 	<a class="w3-btn w3-grey w3-round"> Clear </a> <!--Creating a button that once it is clicked will fully clear the canvas screen so that nothing can be seen-->
 	
