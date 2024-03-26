@@ -73,11 +73,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-	<canvas id = "myC" width="300" height="225" style="border:6px solid #993448"></canvas>	
+	<canvas id = "myCanvas" width="300" height="225" style="border:6px solid #000000"></canvas>	<!-- This creates my canvas with the width at 300 pixels and the height set at 225 pixels. It adds stype element with border of 6 pixel with a solid color-->
 </div>
 
 <div>
 	<a href= "#one" class="w3-btn w3-grey w3-round"> Draws Rectangle </a> <!--Creating a button that once it is clicked will create a rectangle on the canvas-->
+	
+	function draw_a() {
+	var a_canvas = document.getElementById("myCanvas");
+  	var a_context = a_canvas.getContext("2d");
+  	a_context.fillRect(50, 25, 150, 100);
+}
+
 
 	<a href ="two" class="w3-btn w3-grey w3-round"> Draw out your name </a> <!--Creating a button that once it is clicked will create a person's name onto the Canvas-->
 
